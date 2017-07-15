@@ -69,3 +69,6 @@ def update_drawing_info(info_name):
 def get_drawing_info(info_name):
     with open('drawinginfo/' + info_name + '.csv', 'r') as info_file:
         return jsonify(info_file.read())
+
+if __name__ == '__main__':
+    app.run()
